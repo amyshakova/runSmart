@@ -10,6 +10,7 @@
     text-transform: uppercase;
     color: $second_color;
     border: none;
+    cursor: pointer;
     &_main{
         width: 303px;
         height: 54px;
@@ -25,6 +26,7 @@
         font-size: 16px;
         line-height: 58px;
         color: $second_color;
+        margin-top: 34px;
     }
 }
 @media (max-width: 575px){

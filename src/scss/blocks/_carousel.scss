@@ -1,0 +1,90 @@
+.carousel{
+    padding: 81px 0;
+    &__iner{
+        width: 750px;
+        margin: 0 auto;
+        position: relative;
+        .slick-prev, .slick-next{
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+            background: none;
+            border: none;
+            width: 31px;
+            height: 50px;
+            transform: translateY(-50%);
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        .slick-next{
+            right: -66px;
+        }
+        .slick-prev{            
+            left: -66px;
+        }
+        .slick-slide{
+            height: 580px;
+            display: flex;
+            align-items: center;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 991px){
+    .carousel{
+        padding: 40px 0;
+        &__iner{
+            width: 100%;
+            .slick-prev{
+                left: 0;
+            }
+            .slick-next{
+                right: 0px;
+            }
+            .slick-prev, .slick-next{
+                width: 50px;
+                background-color: rgba(256, 256, 256, 0.5);
+                border-radius: 50%;
+                img{
+                    width: 50%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .carousel{
+        &__iner{
+            .slick-slide{
+                height: 420px;
+            }
+        }
+    }
+}
+@media (max-width: 575px){
+    .carousel{
+        padding: 40px 0 35px;
+        &__iner{
+            
+            .slick-slide{
+                height: 300px;
+            }
+        }
+    }
+}
+@media (max-width: 320px){
+    .carousel{
+        &__iner{
+            
+            .slick-slide{
+                height: 224px;
+            }
+        }
+    }
+}

@@ -14,13 +14,29 @@
         border:none;
         outline: none;
         border-radius:5px;
-        &:last-of-type{
-            margin-bottom: 34px;
-        }
+        
+    }
+    &_mt25{
+        margin-top: 25px;
     }
 }
 @media (max-width: 767px){
     .feed-form{
         max-width: 100%;
+    }
+}
+#consultation-form{
+    .error{
+        border: 1px solid $main_color;
+    }
+    label.error{
+        text-align: center;
+        font-size: 16px;
+        color: white;
+        font-weight: 700;
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+        border: none;
     }
 }

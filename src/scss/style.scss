@@ -12,6 +12,9 @@
     max-width: 950px;
     margin: 0 auto;
 }
+.container-fluid{
+    max-width: 100%;
+}
 @media (max-width: 991px){
     .container{
         width: 100%;
@@ -25,3 +28,7 @@
 @import 'blocks/adventages';
 @import 'blocks/consultation';
 @import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/map';
+@import 'blocks/modal';
